@@ -12,4 +12,12 @@ public class Game {
 		this.numberList = numberList;
 	}
 
+	public List<String> getNumberList() {
+		return numberList;
+	}
+
+	public void setNumberList(List<String> numberList) {
+		this.numberList = numberList;
+	}
+
 }
