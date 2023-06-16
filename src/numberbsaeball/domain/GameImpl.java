@@ -1,9 +1,10 @@
 package numberbsaeball.domain;
 
+import java.util.List;
 import java.util.Random;
 
 import numberbsaeball.entity.Computer;
-import numberbsaeball.entity.Game;
+import numberbsaeball.entity.User;
 
 public class GameImpl implements GameRepository {
 
@@ -24,8 +25,29 @@ public class GameImpl implements GameRepository {
 	}
 
 	@Override
-	public void Calculate(Game game) {
-		// TODO Auto-generated method stub
+	public void Check(Computer computer) {
+
+		if (!(computer.getNumberList().get(0).equals(computer.getNumberList().get(1)))
+				&& (!computer.getNumberList().get(0).equals(computer.getNumberList().get(2)))
+				&& (!computer.getNumberList().get(1).equals(computer.getNumberList().get(2)))) {
+
+		} else {
+			makeAnswer(computer);
+		}
+
+	}
+
+	@Override
+	public void Calculate(Computer computer, User user) {
+
+		List<String> comNum = computer.getNumberList();
+		List<String> usrNum = user.getNumberList();
+
+		for (String comStr : comNum) {
+			for (String usrStr : usrNum) {
+
+			}
+		}
 
 	}
 

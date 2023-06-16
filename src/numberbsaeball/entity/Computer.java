@@ -2,7 +2,7 @@ package numberbsaeball.entity;
 
 import java.util.List;
 
-public class Computer extends Game {
+public class Computer extends Player {
 
 	public Computer(List<String> numberList) {
 		super(numberList);

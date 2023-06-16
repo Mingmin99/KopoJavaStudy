@@ -1,16 +1,17 @@
 package numberbsaeball.domain;
 
 import numberbsaeball.entity.Computer;
-import numberbsaeball.entity.Game;
+import numberbsaeball.entity.User;
 
 public interface GameRepository {
 
 	void makeAnswer(Computer compter);
 
-	void Calculate(Game game);
-
 	void Win();
 
 	void Lose();
 
+	void Check(Computer computer);
+
+	void Calculate(Computer computer, User user);
 }
